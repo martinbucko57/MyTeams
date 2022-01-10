@@ -67,7 +67,7 @@ class NetworkManager {
     
     //MOCK
     func request<T: Decodable>(json: Data, parameters: [String: String]? = nil, completion: @escaping (Result<T, Error>) -> Void) {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
             do {
                 let decodedData = try JSONDecoder().decode(T.self, from: json)
                 print(decodedData)
