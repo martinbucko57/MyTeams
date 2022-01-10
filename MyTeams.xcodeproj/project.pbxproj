@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C00756C42770861200899628 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00756C32770861200899628 /* Endpoint.swift */; };
+		C00756C627709C3A00899628 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00756C527709C3A00899628 /* NetworkError.swift */; };
+		C00756C82770E46100899628 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00756C72770E46100899628 /* GeneralResponse.swift */; };
+		C011FA6B278997FF00E7733B /* StandingsTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA69278997FF00E7733B /* StandingsTableViewHeaderCell.swift */; };
+		C011FA6C278997FF00E7733B /* StandingsTableViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C011FA6A278997FF00E7733B /* StandingsTableViewHeaderCell.xib */; };
+		C011FA6E27899EE300E7733B /* StandingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C011FA6D27899EE300E7733B /* StandingsTableViewCell.xib */; };
+		C011FA702789A11900E7733B /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C011FA6F2789A11900E7733B /* TeamTableViewCell.xib */; };
+		C011FA722789A40C00E7733B /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C011FA712789A40C00E7733B /* MatchTableViewCell.xib */; };
+		C011FA752789CAF200E7733B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA742789CAF200E7733B /* Team.swift */; };
+		C011FA772789CB2C00E7733B /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA762789CB2C00E7733B /* Venue.swift */; };
+		C011FA792789CBA400E7733B /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA782789CBA400E7733B /* Fixture.swift */; };
+		C011FA7B2789CBB700E7733B /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA7A2789CBB700E7733B /* League.swift */; };
+		C011FA7D2789CC0200E7733B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA7C2789CC0200E7733B /* Country.swift */; };
+		C011FA7F2789CC6B00E7733B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA7E2789CC6B00E7733B /* Event.swift */; };
+		C011FA812789F0BC00E7733B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA802789F0BC00E7733B /* Player.swift */; };
+		C011FA832789F11500E7733B /* LineUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA822789F11500E7733B /* LineUp.swift */; };
+		C011FA852789F26E00E7733B /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA842789F26E00E7733B /* Season.swift */; };
+		C011FA872789F2EE00E7733B /* TestingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA862789F2EE00E7733B /* TestingData.swift */; };
+		C011FA8F278A3A4A00E7733B /* MatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA8D278A3A4A00E7733B /* MatchDetailViewController.swift */; };
+		C011FA92278A3A9C00E7733B /* MatchDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C011FA91278A3A9C00E7733B /* MatchDetailViewController.storyboard */; };
+		C011FA94278A3AC200E7733B /* MatchDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA93278A3AC200E7733B /* MatchDetailCoordinator.swift */; };
+		C011FA96278A408500E7733B /* MatchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA95278A408500E7733B /* MatchDetailViewModel.swift */; };
+		C01EFE0127836F6E0001FD88 /* Sequence+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EFE0027836F6E0001FD88 /* Sequence+Ext.swift */; };
+		C023AEE82788798800D3617B /* StandingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C023AEE72788798800D3617B /* StandingsTableViewCell.swift */; };
+		C02AA5952775DACF00C3E6D3 /* SearchTeamCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AA5942775DACF00C3E6D3 /* SearchTeamCoordinator.swift */; };
+		C02AA5972776293700C3E6D3 /* SearchTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AA5962776293700C3E6D3 /* SearchTeamViewModel.swift */; };
+		C02AA5992778740B00C3E6D3 /* SearchTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AA5982778740B00C3E6D3 /* SearchTeamViewController.swift */; };
+		C02AA59B277878D400C3E6D3 /* SearchTeamViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02AA59A277878D400C3E6D3 /* SearchTeamViewController.storyboard */; };
+		C02AA59D2778BD2900C3E6D3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AA59C2778BD2900C3E6D3 /* APIService.swift */; };
+		C034595627861B90005D5226 /* MatchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034595527861B90005D5226 /* MatchListCoordinator.swift */; };
+		C03459582786382E005D5226 /* StandingListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03459572786382E005D5226 /* StandingListCoordinator.swift */; };
+		C034595A27863A27005D5226 /* StandingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034595927863A27005D5226 /* StandingListViewModel.swift */; };
+		C09AB4CB27887D8E0016D42A /* StandingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09AB4CA27887D8E0016D42A /* StandingsCellViewModel.swift */; };
+		C0A55F74277CD84F00DC3D49 /* TeamDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A55F73277CD84F00DC3D49 /* TeamDetailCoordinator.swift */; };
+		C0A55F76277CDD0F00DC3D49 /* TeamDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A55F75277CDD0F00DC3D49 /* TeamDetailViewModel.swift */; };
+		C0A55F78277CDE3500DC3D49 /* TeamDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A55F77277CDE3500DC3D49 /* TeamDetailViewController.storyboard */; };
+		C0A55F7A277CDF7500DC3D49 /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A55F79277CDF7500DC3D49 /* TeamDetailViewController.swift */; };
+		C0ADD031276CBAD90016AFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD030276CBAD90016AFE4 /* AppDelegate.swift */; };
+		C0ADD033276CBAD90016AFE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD032276CBAD90016AFE4 /* SceneDelegate.swift */; };
+		C0ADD03A276CBADA0016AFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0ADD039276CBADA0016AFE4 /* Assets.xcassets */; };
+		C0ADD048276CBC460016AFE4 /* TeamListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD044276CBC450016AFE4 /* TeamListCoordinator.swift */; };
+		C0ADD049276CBC460016AFE4 /* TeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD045276CBC460016AFE4 /* TeamListViewController.swift */; };
+		C0ADD04A276CBC460016AFE4 /* TeamListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0ADD046276CBC460016AFE4 /* TeamListViewController.storyboard */; };
+		C0ADD04B276CBC460016AFE4 /* TeamListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD047276CBC460016AFE4 /* TeamListViewModel.swift */; };
+		C0ADD04D276CBDE90016AFE4 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD04C276CBDE90016AFE4 /* Storyboardable.swift */; };
+		C0ADD04F276CC7F10016AFE4 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD04E276CC7F10016AFE4 /* TeamTableViewCell.swift */; };
+		C0ADD053276CD7900016AFE4 /* TeamCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD052276CD7900016AFE4 /* TeamCellViewModel.swift */; };
+		C0B595BA277B737A00951512 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B595B9277B737A00951512 /* UIImageView+Ext.swift */; };
+		C0C2926D2781E42200456BFE /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C2926C2781E42200456BFE /* UIFont+Ext.swift */; };
+		C0CB98C02787969000712186 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB98BF2787969000712186 /* AppConstants.swift */; };
+		C0CC18AE277BD33D0092C051 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC18AD277BD33D0092C051 /* UserDefaults+Ext.swift */; };
+		C0DED2F5276F711E0007E679 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DED2F4276F711E0007E679 /* NetworkManager.swift */; };
+		C0DED2F7276F7BFB0007E679 /* EndpointConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DED2F6276F7BFB0007E679 /* EndpointConstants.swift */; };
+		C0DED2F9276F87F90007E679 /* EndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DED2F8276F87F90007E679 /* EndpointEnum.swift */; };
+		C0E22D52277F23EA00656D3C /* MatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E22D51277F23EA00656D3C /* MatchListViewController.swift */; };
+		C0E22D56277F242A00656D3C /* MatchListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E22D55277F242A00656D3C /* MatchListViewController.storyboard */; };
+		C0E22D58277F24A000656D3C /* StandingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E22D57277F24A000656D3C /* StandingListViewController.swift */; };
+		C0E22D5A277F24B800656D3C /* StandingListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E22D59277F24B800656D3C /* StandingListViewController.storyboard */; };
+		C0E22D5C2780600600656D3C /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E22D5B2780600600656D3C /* MatchTableViewCell.swift */; };
+		C0E22D5E278107F100656D3C /* MatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E22D5D278107F100656D3C /* MatchListViewModel.swift */; };
+		C0E22D6027810D0100656D3C /* MatchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E22D5F27810D0100656D3C /* MatchCellViewModel.swift */; };
+		C0E9E5E2278483F8008EDF8D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E9E5E1278483F8008EDF8D /* BaseViewController.swift */; };
+		C0EAE6D827733928000C441C /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EAE6D727733928000C441C /* ResponseType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C00756C32770861200899628 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C00756C527709C3A00899628 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C00756C72770E46100899628 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		C011FA69278997FF00E7733B /* StandingsTableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewHeaderCell.swift; sourceTree = "<group>"; };
+		C011FA6A278997FF00E7733B /* StandingsTableViewHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingsTableViewHeaderCell.xib; sourceTree = "<group>"; };
+		C011FA6D27899EE300E7733B /* StandingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingsTableViewCell.xib; sourceTree = "<group>"; };
+		C011FA6F2789A11900E7733B /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
+		C011FA712789A40C00E7733B /* MatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchTableViewCell.xib; sourceTree = "<group>"; };
+		C011FA742789CAF200E7733B /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		C011FA762789CB2C00E7733B /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		C011FA782789CBA400E7733B /* Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		C011FA7A2789CBB700E7733B /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		C011FA7C2789CC0200E7733B /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		C011FA7E2789CC6B00E7733B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C011FA802789F0BC00E7733B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C011FA822789F11500E7733B /* LineUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUp.swift; sourceTree = "<group>"; };
+		C011FA842789F26E00E7733B /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		C011FA862789F2EE00E7733B /* TestingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingData.swift; sourceTree = "<group>"; };
+		C011FA8D278A3A4A00E7733B /* MatchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewController.swift; sourceTree = "<group>"; };
+		C011FA91278A3A9C00E7733B /* MatchDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchDetailViewController.storyboard; sourceTree = "<group>"; };
+		C011FA93278A3AC200E7733B /* MatchDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailCoordinator.swift; sourceTree = "<group>"; };
+		C011FA95278A408500E7733B /* MatchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewModel.swift; sourceTree = "<group>"; };
+		C01EFE0027836F6E0001FD88 /* Sequence+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Ext.swift"; sourceTree = "<group>"; };
+		C023AEE72788798800D3617B /* StandingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewCell.swift; sourceTree = "<group>"; };
+		C02AA5942775DACF00C3E6D3 /* SearchTeamCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamCoordinator.swift; sourceTree = "<group>"; };
+		C02AA5962776293700C3E6D3 /* SearchTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamViewModel.swift; sourceTree = "<group>"; };
+		C02AA5982778740B00C3E6D3 /* SearchTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamViewController.swift; sourceTree = "<group>"; };
+		C02AA59A277878D400C3E6D3 /* SearchTeamViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchTeamViewController.storyboard; sourceTree = "<group>"; };
+		C02AA59C2778BD2900C3E6D3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C034595527861B90005D5226 /* MatchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListCoordinator.swift; sourceTree = "<group>"; };
+		C03459572786382E005D5226 /* StandingListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingListCoordinator.swift; sourceTree = "<group>"; };
+		C034595927863A27005D5226 /* StandingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingListViewModel.swift; sourceTree = "<group>"; };
+		C09AB4CA27887D8E0016D42A /* StandingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsCellViewModel.swift; sourceTree = "<group>"; };
+		C0A55F73277CD84F00DC3D49 /* TeamDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailCoordinator.swift; sourceTree = "<group>"; };
+		C0A55F75277CDD0F00DC3D49 /* TeamDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewModel.swift; sourceTree = "<group>"; };
+		C0A55F77277CDE3500DC3D49 /* TeamDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamDetailViewController.storyboard; sourceTree = "<group>"; };
+		C0A55F79277CDF7500DC3D49 /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
+		C0ADD02D276CBAD90016AFE4 /* MyTeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0ADD030276CBAD90016AFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0ADD032276CBAD90016AFE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C0ADD039276CBADA0016AFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0ADD03E276CBADA0016AFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0ADD044276CBC450016AFE4 /* TeamListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListCoordinator.swift; sourceTree = "<group>"; };
+		C0ADD045276CBC460016AFE4 /* TeamListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListViewController.swift; sourceTree = "<group>"; };
+		C0ADD046276CBC460016AFE4 /* TeamListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamListViewController.storyboard; sourceTree = "<group>"; };
+		C0ADD047276CBC460016AFE4 /* TeamListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListViewModel.swift; sourceTree = "<group>"; };
+		C0ADD04C276CBDE90016AFE4 /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		C0ADD04E276CC7F10016AFE4 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		C0ADD052276CD7900016AFE4 /* TeamCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCellViewModel.swift; sourceTree = "<group>"; };
+		C0B595B9277B737A00951512 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		C0C2926C2781E42200456BFE /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		C0CB98BF2787969000712186 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		C0CC18AD277BD33D0092C051 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
+		C0DED2F4276F711E0007E679 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C0DED2F6276F7BFB0007E679 /* EndpointConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointConstants.swift; sourceTree = "<group>"; };
+		C0DED2F8276F87F90007E679 /* EndpointEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointEnum.swift; sourceTree = "<group>"; };
+		C0E22D51277F23EA00656D3C /* MatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewController.swift; sourceTree = "<group>"; };
+		C0E22D55277F242A00656D3C /* MatchListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchListViewController.storyboard; sourceTree = "<group>"; };
+		C0E22D57277F24A000656D3C /* StandingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingListViewController.swift; sourceTree = "<group>"; };
+		C0E22D59277F24B800656D3C /* StandingListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StandingListViewController.storyboard; sourceTree = "<group>"; };
+		C0E22D5B2780600600656D3C /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		C0E22D5D278107F100656D3C /* MatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewModel.swift; sourceTree = "<group>"; };
+		C0E22D5F27810D0100656D3C /* MatchCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCellViewModel.swift; sourceTree = "<group>"; };
+		C0E9E5E1278483F8008EDF8D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C0EAE6D727733928000C441C /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0ADD02A276CBAD90016AFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C011FA732789CADF00E7733B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C011FA7C2789CC0200E7733B /* Country.swift */,
+				C011FA7E2789CC6B00E7733B /* Event.swift */,
+				C011FA782789CBA400E7733B /* Fixture.swift */,
+				C00756C72770E46100899628 /* GeneralResponse.swift */,
+				C011FA7A2789CBB700E7733B /* League.swift */,
+				C011FA822789F11500E7733B /* LineUp.swift */,
+				C011FA802789F0BC00E7733B /* Player.swift */,
+				C0EAE6D727733928000C441C /* ResponseType.swift */,
+				C011FA842789F26E00E7733B /* Season.swift */,
+				C011FA742789CAF200E7733B /* Team.swift */,
+				C011FA762789CB2C00E7733B /* Venue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C011FA88278A39FB00E7733B /* MatchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C011FA8D278A3A4A00E7733B /* MatchDetailViewController.swift */,
+				C011FA91278A3A9C00E7733B /* MatchDetailViewController.storyboard */,
+				C011FA93278A3AC200E7733B /* MatchDetailCoordinator.swift */,
+				C011FA95278A408500E7733B /* MatchDetailViewModel.swift */,
+			);
+			path = MatchDetail;
+			sourceTree = "<group>";
+		};
+		C02AA5932775DA9B00C3E6D3 /* SearchTeam */ = {
+			isa = PBXGroup;
+			children = (
+				C02AA5942775DACF00C3E6D3 /* SearchTeamCoordinator.swift */,
+				C02AA5962776293700C3E6D3 /* SearchTeamViewModel.swift */,
+				C02AA5982778740B00C3E6D3 /* SearchTeamViewController.swift */,
+				C02AA59A277878D400C3E6D3 /* SearchTeamViewController.storyboard */,
+			);
+			path = SearchTeam;
+			sourceTree = "<group>";
+		};
+		C09AB4CE2788CDE90016D42A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C09AB4CA27887D8E0016D42A /* StandingsCellViewModel.swift */,
+				C023AEE72788798800D3617B /* StandingsTableViewCell.swift */,
+				C011FA6D27899EE300E7733B /* StandingsTableViewCell.xib */,
+				C011FA69278997FF00E7733B /* StandingsTableViewHeaderCell.swift */,
+				C011FA6A278997FF00E7733B /* StandingsTableViewHeaderCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C09AB4CF2788CDF90016D42A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C0E22D5F27810D0100656D3C /* MatchCellViewModel.swift */,
+				C0E22D5B2780600600656D3C /* MatchTableViewCell.swift */,
+				C011FA712789A40C00E7733B /* MatchTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C09AB4D02788CE1E0016D42A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C0ADD052276CD7900016AFE4 /* TeamCellViewModel.swift */,
+				C0ADD04E276CC7F10016AFE4 /* TeamTableViewCell.swift */,
+				C011FA6F2789A11900E7733B /* TeamTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C0A55F72277CD82F00DC3D49 /* TeamDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C0E22D4E277F238600656D3C /* StandingList */,
+				C0E22D4D277F236900656D3C /* MatchList */,
+				C0A55F73277CD84F00DC3D49 /* TeamDetailCoordinator.swift */,
+				C0A55F75277CDD0F00DC3D49 /* TeamDetailViewModel.swift */,
+				C0A55F77277CDE3500DC3D49 /* TeamDetailViewController.storyboard */,
+				C0A55F79277CDF7500DC3D49 /* TeamDetailViewController.swift */,
+			);
+			path = TeamDetail;
+			sourceTree = "<group>";
+		};
+		C0ADD024276CBAD90016AFE4 = {
+			isa = PBXGroup;
+			children = (
+				C0ADD02F276CBAD90016AFE4 /* MyTeams */,
+				C0ADD02E276CBAD90016AFE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0ADD02E276CBAD90016AFE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0ADD02D276CBAD90016AFE4 /* MyTeams.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0ADD02F276CBAD90016AFE4 /* MyTeams */ = {
+			isa = PBXGroup;
+			children = (
+				C011FA732789CADF00E7733B /* Model */,
+				C0E9E5E0278483C1008EDF8D /* Extension */,
+				C0DED2F3276F71080007E679 /* Networking */,
+				C0ADD050276CD5AB0016AFE4 /* Scene */,
+				C0ADD030276CBAD90016AFE4 /* AppDelegate.swift */,
+				C0ADD032276CBAD90016AFE4 /* SceneDelegate.swift */,
+				C0ADD039276CBADA0016AFE4 /* Assets.xcassets */,
+				C0ADD03E276CBADA0016AFE4 /* Info.plist */,
+				C0CB98BF2787969000712186 /* AppConstants.swift */,
+				C011FA862789F2EE00E7733B /* TestingData.swift */,
+			);
+			path = MyTeams;
+			sourceTree = "<group>";
+		};
+		C0ADD050276CD5AB0016AFE4 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9E5DF278483A8008EDF8D /* Common */,
+				C011FA88278A39FB00E7733B /* MatchDetail */,
+				C02AA5932775DA9B00C3E6D3 /* SearchTeam */,
+				C0A55F72277CD82F00DC3D49 /* TeamDetail */,
+				C0ADD051276CD5C90016AFE4 /* TeamList */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		C0ADD051276CD5C90016AFE4 /* TeamList */ = {
+			isa = PBXGroup;
+			children = (
+				C09AB4D02788CE1E0016D42A /* Cell */,
+				C0ADD044276CBC450016AFE4 /* TeamListCoordinator.swift */,
+				C0ADD045276CBC460016AFE4 /* TeamListViewController.swift */,
+				C0ADD046276CBC460016AFE4 /* TeamListViewController.storyboard */,
+				C0ADD047276CBC460016AFE4 /* TeamListViewModel.swift */,
+			);
+			path = TeamList;
+			sourceTree = "<group>";
+		};
+		C0DED2F3276F71080007E679 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C0DED2F4276F711E0007E679 /* NetworkManager.swift */,
+				C0DED2F8276F87F90007E679 /* EndpointEnum.swift */,
+				C0DED2F6276F7BFB0007E679 /* EndpointConstants.swift */,
+				C00756C32770861200899628 /* Endpoint.swift */,
+				C00756C527709C3A00899628 /* NetworkError.swift */,
+				C02AA59C2778BD2900C3E6D3 /* APIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C0E22D4D277F236900656D3C /* MatchList */ = {
+			isa = PBXGroup;
+			children = (
+				C09AB4CF2788CDF90016D42A /* Cell */,
+				C0E22D51277F23EA00656D3C /* MatchListViewController.swift */,
+				C0E22D55277F242A00656D3C /* MatchListViewController.storyboard */,
+				C0E22D5D278107F100656D3C /* MatchListViewModel.swift */,
+				C034595527861B90005D5226 /* MatchListCoordinator.swift */,
+			);
+			path = MatchList;
+			sourceTree = "<group>";
+		};
+		C0E22D4E277F238600656D3C /* StandingList */ = {
+			isa = PBXGroup;
+			children = (
+				C09AB4CE2788CDE90016D42A /* Cell */,
+				C0E22D57277F24A000656D3C /* StandingListViewController.swift */,
+				C0E22D59277F24B800656D3C /* StandingListViewController.storyboard */,
+				C03459572786382E005D5226 /* StandingListCoordinator.swift */,
+				C034595927863A27005D5226 /* StandingListViewModel.swift */,
+			);
+			path = StandingList;
+			sourceTree = "<group>";
+		};
+		C0E9E5DF278483A8008EDF8D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9E5E1278483F8008EDF8D /* BaseViewController.swift */,
+				C0ADD04C276CBDE90016AFE4 /* Storyboardable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C0E9E5E0278483C1008EDF8D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0B595B9277B737A00951512 /* UIImageView+Ext.swift */,
+				C0CC18AD277BD33D0092C051 /* UserDefaults+Ext.swift */,
+				C0C2926C2781E42200456BFE /* UIFont+Ext.swift */,
+				C01EFE0027836F6E0001FD88 /* Sequence+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0ADD02C276CBAD90016AFE4 /* MyTeams */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0ADD041276CBADA0016AFE4 /* Build configuration list for PBXNativeTarget "MyTeams" */;
+			buildPhases = (
+				C0ADD029276CBAD90016AFE4 /* Sources */,
+				C0ADD02A276CBAD90016AFE4 /* Frameworks */,
+				C0ADD02B276CBAD90016AFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTeams;
+			productName = MyTeams;
+			productReference = C0ADD02D276CBAD90016AFE4 /* MyTeams.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0ADD025276CBAD90016AFE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C0ADD02C276CBAD90016AFE4 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = C0ADD028276CBAD90016AFE4 /* Build configuration list for PBXProject "MyTeams" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0ADD024276CBAD90016AFE4;
+			productRefGroup = C0ADD02E276CBAD90016AFE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0ADD02C276CBAD90016AFE4 /* MyTeams */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0ADD02B276CBAD90016AFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C011FA92278A3A9C00E7733B /* MatchDetailViewController.storyboard in Resources */,
+				C02AA59B277878D400C3E6D3 /* SearchTeamViewController.storyboard in Resources */,
+				C011FA6E27899EE300E7733B /* StandingsTableViewCell.xib in Resources */,
+				C0ADD03A276CBADA0016AFE4 /* Assets.xcassets in Resources */,
+				C0ADD04A276CBC460016AFE4 /* TeamListViewController.storyboard in Resources */,
+				C011FA702789A11900E7733B /* TeamTableViewCell.xib in Resources */,
+				C011FA722789A40C00E7733B /* MatchTableViewCell.xib in Resources */,
+				C0E22D56277F242A00656D3C /* MatchListViewController.storyboard in Resources */,
+				C0A55F78277CDE3500DC3D49 /* TeamDetailViewController.storyboard in Resources */,
+				C0E22D5A277F24B800656D3C /* StandingListViewController.storyboard in Resources */,
+				C011FA6C278997FF00E7733B /* StandingsTableViewHeaderCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0ADD029276CBAD90016AFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0ADD04B276CBC460016AFE4 /* TeamListViewModel.swift in Sources */,
+				C02AA59D2778BD2900C3E6D3 /* APIService.swift in Sources */,
+				C02AA5992778740B00C3E6D3 /* SearchTeamViewController.swift in Sources */,
+				C011FA8F278A3A4A00E7733B /* MatchDetailViewController.swift in Sources */,
+				C00756C627709C3A00899628 /* NetworkError.swift in Sources */,
+				C011FA812789F0BC00E7733B /* Player.swift in Sources */,
+				C0E22D58277F24A000656D3C /* StandingListViewController.swift in Sources */,
+				C011FA832789F11500E7733B /* LineUp.swift in Sources */,
+				C0A55F76277CDD0F00DC3D49 /* TeamDetailViewModel.swift in Sources */,
+				C011FA872789F2EE00E7733B /* TestingData.swift in Sources */,
+				C0ADD04D276CBDE90016AFE4 /* Storyboardable.swift in Sources */,
+				C0DED2F5276F711E0007E679 /* NetworkManager.swift in Sources */,
+				C03459582786382E005D5226 /* StandingListCoordinator.swift in Sources */,
+				C011FA6B278997FF00E7733B /* StandingsTableViewHeaderCell.swift in Sources */,
+				C0E22D5E278107F100656D3C /* MatchListViewModel.swift in Sources */,
+				C011FA792789CBA400E7733B /* Fixture.swift in Sources */,
+				C034595627861B90005D5226 /* MatchListCoordinator.swift in Sources */,
+				C00756C82770E46100899628 /* GeneralResponse.swift in Sources */,
+				C011FA852789F26E00E7733B /* Season.swift in Sources */,
+				C00756C42770861200899628 /* Endpoint.swift in Sources */,
+				C0A55F74277CD84F00DC3D49 /* TeamDetailCoordinator.swift in Sources */,
+				C0A55F7A277CDF7500DC3D49 /* TeamDetailViewController.swift in Sources */,
+				C0E9E5E2278483F8008EDF8D /* BaseViewController.swift in Sources */,
+				C0ADD031276CBAD90016AFE4 /* AppDelegate.swift in Sources */,
+				C011FA7F2789CC6B00E7733B /* Event.swift in Sources */,
+				C02AA5952775DACF00C3E6D3 /* SearchTeamCoordinator.swift in Sources */,
+				C011FA94278A3AC200E7733B /* MatchDetailCoordinator.swift in Sources */,
+				C09AB4CB27887D8E0016D42A /* StandingsCellViewModel.swift in Sources */,
+				C0DED2F7276F7BFB0007E679 /* EndpointConstants.swift in Sources */,
+				C011FA7B2789CBB700E7733B /* League.swift in Sources */,
+				C0CB98C02787969000712186 /* AppConstants.swift in Sources */,
+				C0ADD04F276CC7F10016AFE4 /* TeamTableViewCell.swift in Sources */,
+				C0ADD033276CBAD90016AFE4 /* SceneDelegate.swift in Sources */,
+				C0ADD049276CBC460016AFE4 /* TeamListViewController.swift in Sources */,
+				C0ADD048276CBC460016AFE4 /* TeamListCoordinator.swift in Sources */,
+				C0EAE6D827733928000C441C /* ResponseType.swift in Sources */,
+				C0B595BA277B737A00951512 /* UIImageView+Ext.swift in Sources */,
+				C011FA772789CB2C00E7733B /* Venue.swift in Sources */,
+				C011FA752789CAF200E7733B /* Team.swift in Sources */,
+				C0E22D6027810D0100656D3C /* MatchCellViewModel.swift in Sources */,
+				C0E22D52277F23EA00656D3C /* MatchListViewController.swift in Sources */,
+				C034595A27863A27005D5226 /* StandingListViewModel.swift in Sources */,
+				C0C2926D2781E42200456BFE /* UIFont+Ext.swift in Sources */,
+				C0E22D5C2780600600656D3C /* MatchTableViewCell.swift in Sources */,
+				C0DED2F9276F87F90007E679 /* EndpointEnum.swift in Sources */,
+				C011FA96278A408500E7733B /* MatchDetailViewModel.swift in Sources */,
+				C0ADD053276CD7900016AFE4 /* TeamCellViewModel.swift in Sources */,
+				C02AA5972776293700C3E6D3 /* SearchTeamViewModel.swift in Sources */,
+				C011FA7D2789CC0200E7733B /* Country.swift in Sources */,
+				C023AEE82788798800D3617B /* StandingsTableViewCell.swift in Sources */,
+				C0CC18AE277BD33D0092C051 /* UserDefaults+Ext.swift in Sources */,
+				C01EFE0127836F6E0001FD88 /* Sequence+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C0ADD03F276CBADA0016AFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0ADD040276CBADA0016AFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0ADD042276CBADA0016AFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G7B3QQ9Z8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTeams/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bucko.martin.MyTeams;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C0ADD043276CBADA0016AFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2G7B3QQ9Z8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTeams/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bucko.martin.MyTeams;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0ADD028276CBAD90016AFE4 /* Build configuration list for PBXProject "MyTeams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0ADD03F276CBADA0016AFE4 /* Debug */,
+				C0ADD040276CBADA0016AFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0ADD041276CBADA0016AFE4 /* Build configuration list for PBXNativeTarget "MyTeams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0ADD042276CBADA0016AFE4 /* Debug */,
+				C0ADD043276CBADA0016AFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0ADD025276CBAD90016AFE4 /* Project object */;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Match List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MatchListViewController" id="Y6W-OH-hqX" customClass="MatchListViewController" customModule="MyTeams" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAU-Oc-YNW">
+                                <rect key="frame" x="340" y="49" width="74" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="leagueListButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nsK-ZQ-QLy"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ljc-GO-tuR">
+                                <rect key="frame" x="0.0" y="91" width="414" height="766"/>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KAU-Oc-YNW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Foa-Hi-HQI"/>
+                            <constraint firstItem="Ljc-GO-tuR" firstAttribute="top" secondItem="KAU-Oc-YNW" secondAttribute="bottom" constant="10" id="S64-D9-LHz"/>
+                            <constraint firstItem="KAU-Oc-YNW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="TES-QY-cx7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ljc-GO-tuR" secondAttribute="bottom" constant="5" id="Wpr-rz-YSk"/>
+                            <constraint firstItem="Ljc-GO-tuR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Y3f-Ic-3P1"/>
+                            <constraint firstItem="Ljc-GO-tuR" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="lXd-JZ-Tr8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leagueListButton" destination="KAU-Oc-YNW" id="eQ4-KJ-JvD"/>
+                        <outlet property="tableView" destination="Ljc-GO-tuR" id="py0-2y-XUN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
