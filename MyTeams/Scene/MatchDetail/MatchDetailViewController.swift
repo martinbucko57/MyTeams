@@ -17,6 +17,8 @@ class MatchDetailViewController: BaseViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var timeElapsedLabel: UILabel!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var containerView: UIView!
     
     var viewModel: MatchDetailViewModelType?
 
@@ -26,6 +28,10 @@ class MatchDetailViewController: BaseViewController {
         setupViewModel()
         setupUI()
         viewModel?.inputs.viewDidLoad()
+    }
+    
+    @IBAction func segmentValueChanged(_ sender: Any) {
+        viewModel?.inputs.segmentValueChanged(selectedIndex: segmentedControl.selectedSegmentIndex)
     }
 }
 
@@ -46,8 +52,8 @@ extension MatchDetailViewController {
     private func setupUI() {
         guard let viewModel = viewModel else { return }
 
-        teamHomeLogo.load(url: viewModel.teamHomeURL, placeholder: UIImage(systemName: "xmark.shield"))
-        teamAwayLogo.load(url: viewModel.teamAwayURL, placeholder: UIImage(systemName: "xmark.shield"))
+        teamHomeLogo.load(url: viewModel.teamHomeURL, placeholder: AppConstants.Images.shieldImage)
+        teamAwayLogo.load(url: viewModel.teamAwayURL, placeholder: AppConstants.Images.shieldImage)
         teamHomeNameLabel.text = viewModel.teamHomeName
         teamAwayNameLabel.text = viewModel.teamAwayName
         dateLabel.text = viewModel.matchDate

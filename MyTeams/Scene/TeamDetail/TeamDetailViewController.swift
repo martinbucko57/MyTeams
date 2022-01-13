@@ -39,7 +39,7 @@ extension TeamDetailViewController {
         viewModel?.outputs.didUpdateFavor = { [weak self] in
             DispatchQueue.main.async {
                 guard let viewModel = self?.viewModel else { return }
-                self?.favouriteImageView.image = viewModel.isFavourite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+                self?.favouriteImageView.image = viewModel.isFavourite ? AppConstants.Images.heartFillImage : AppConstants.Images.heartImage
             }
         }
     }
@@ -47,9 +47,9 @@ extension TeamDetailViewController {
     private func setupUI() {
         guard let viewModel = viewModel else { return }
         self.navigationItem.title = viewModel.teamName
-        logoImageView.load(url: viewModel.teamLogo, placeholder: UIImage(systemName: "xmark.shield"))
+        logoImageView.load(url: viewModel.teamLogo, placeholder: AppConstants.Images.shieldImage)
         teamNameLabel.text = viewModel.teamName.uppercased()
-        favouriteImageView.image = viewModel.isFavourite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+        favouriteImageView.image = viewModel.isFavourite ? AppConstants.Images.heartFillImage : AppConstants.Images.heartImage
         
         let favouriteTap = UITapGestureRecognizer(target: self, action: #selector(favouriteTapped))
         favouriteImageView.isUserInteractionEnabled = true

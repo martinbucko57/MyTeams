@@ -31,7 +31,7 @@ class StandingsTableViewCell: UITableViewCell {
         guard let viewModel = viewModel else { return }
         
         rankLabel.text = viewModel.rank
-        teamLogoImageView.load(url: viewModel.teamLogoURL, placeholder: UIImage(systemName: "xmark.shield"))
+        teamLogoImageView.load(url: viewModel.teamLogoURL, placeholder: AppConstants.Images.shieldImage)
         teamNameLabel.text = viewModel.teamName
         playedMatchesLabel.text = viewModel.playedMatches
         scoreLabel.text = viewModel.score

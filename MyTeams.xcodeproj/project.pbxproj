@@ -39,6 +39,10 @@
 		C034595627861B90005D5226 /* MatchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034595527861B90005D5226 /* MatchListCoordinator.swift */; };
 		C03459582786382E005D5226 /* StandingListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03459572786382E005D5226 /* StandingListCoordinator.swift */; };
 		C034595A27863A27005D5226 /* StandingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034595927863A27005D5226 /* StandingListViewModel.swift */; };
+		C0937EE0278CE15100195046 /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0937EDF278CE15100195046 /* EventListCoordinator.swift */; };
+		C0937EE2278CE1D400195046 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0937EE1278CE1D400195046 /* EventListViewController.swift */; };
+		C0937EE4278CE27E00195046 /* EventListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0937EE3278CE27E00195046 /* EventListViewController.storyboard */; };
+		C0937EE6278CE2BA00195046 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0937EE5278CE2BA00195046 /* EventListViewModel.swift */; };
 		C09AB4CB27887D8E0016D42A /* StandingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09AB4CA27887D8E0016D42A /* StandingsCellViewModel.swift */; };
 		C0A55F74277CD84F00DC3D49 /* TeamDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A55F73277CD84F00DC3D49 /* TeamDetailCoordinator.swift */; };
 		C0A55F76277CDD0F00DC3D49 /* TeamDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A55F75277CDD0F00DC3D49 /* TeamDetailViewModel.swift */; };
@@ -70,6 +74,9 @@
 		C0E22D6027810D0100656D3C /* MatchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E22D5F27810D0100656D3C /* MatchCellViewModel.swift */; };
 		C0E9E5E2278483F8008EDF8D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E9E5E1278483F8008EDF8D /* BaseViewController.swift */; };
 		C0EAE6D827733928000C441C /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EAE6D727733928000C441C /* ResponseType.swift */; };
+		C0F56360278F032C00922DBB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5635E278F032C00922DBB /* EventTableViewCell.swift */; };
+		C0F56361278F032C00922DBB /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F5635F278F032C00922DBB /* EventTableViewCell.xib */; };
+		C0F56364278F331300922DBB /* EventCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F56363278F331300922DBB /* EventCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +112,10 @@
 		C034595527861B90005D5226 /* MatchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListCoordinator.swift; sourceTree = "<group>"; };
 		C03459572786382E005D5226 /* StandingListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingListCoordinator.swift; sourceTree = "<group>"; };
 		C034595927863A27005D5226 /* StandingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingListViewModel.swift; sourceTree = "<group>"; };
+		C0937EDF278CE15100195046 /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
+		C0937EE1278CE1D400195046 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		C0937EE3278CE27E00195046 /* EventListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventListViewController.storyboard; sourceTree = "<group>"; };
+		C0937EE5278CE2BA00195046 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		C09AB4CA27887D8E0016D42A /* StandingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsCellViewModel.swift; sourceTree = "<group>"; };
 		C0A55F73277CD84F00DC3D49 /* TeamDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailCoordinator.swift; sourceTree = "<group>"; };
 		C0A55F75277CDD0F00DC3D49 /* TeamDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewModel.swift; sourceTree = "<group>"; };
@@ -138,6 +149,9 @@
 		C0E22D5F27810D0100656D3C /* MatchCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCellViewModel.swift; sourceTree = "<group>"; };
 		C0E9E5E1278483F8008EDF8D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C0EAE6D727733928000C441C /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		C0F5635E278F032C00922DBB /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		C0F5635F278F032C00922DBB /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		C0F56363278F331300922DBB /* EventCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +186,7 @@
 		C011FA88278A39FB00E7733B /* MatchDetail */ = {
 			isa = PBXGroup;
 			children = (
+				C0937EDE278CE12E00195046 /* EventList */,
 				C011FA8D278A3A4A00E7733B /* MatchDetailViewController.swift */,
 				C011FA91278A3A9C00E7733B /* MatchDetailViewController.storyboard */,
 				C011FA93278A3AC200E7733B /* MatchDetailCoordinator.swift */,
@@ -189,6 +204,18 @@
 				C02AA59A277878D400C3E6D3 /* SearchTeamViewController.storyboard */,
 			);
 			path = SearchTeam;
+			sourceTree = "<group>";
+		};
+		C0937EDE278CE12E00195046 /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				C0F56362278F033000922DBB /* Cell */,
+				C0937EDF278CE15100195046 /* EventListCoordinator.swift */,
+				C0937EE1278CE1D400195046 /* EventListViewController.swift */,
+				C0937EE3278CE27E00195046 /* EventListViewController.storyboard */,
+				C0937EE5278CE2BA00195046 /* EventListViewModel.swift */,
+			);
+			path = EventList;
 			sourceTree = "<group>";
 		};
 		C09AB4CE2788CDE90016D42A /* Cell */ = {
@@ -350,6 +377,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		C0F56362278F033000922DBB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C0F5635E278F032C00922DBB /* EventTableViewCell.swift */,
+				C0F5635F278F032C00922DBB /* EventTableViewCell.xib */,
+				C0F56363278F331300922DBB /* EventCellViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,6 +447,7 @@
 			files = (
 				C011FA92278A3A9C00E7733B /* MatchDetailViewController.storyboard in Resources */,
 				C02AA59B277878D400C3E6D3 /* SearchTeamViewController.storyboard in Resources */,
+				C0937EE4278CE27E00195046 /* EventListViewController.storyboard in Resources */,
 				C011FA6E27899EE300E7733B /* StandingsTableViewCell.xib in Resources */,
 				C0ADD03A276CBADA0016AFE4 /* Assets.xcassets in Resources */,
 				C0ADD04A276CBC460016AFE4 /* TeamListViewController.storyboard in Resources */,
@@ -419,6 +457,7 @@
 				C0A55F78277CDE3500DC3D49 /* TeamDetailViewController.storyboard in Resources */,
 				C0E22D5A277F24B800656D3C /* StandingListViewController.storyboard in Resources */,
 				C011FA6C278997FF00E7733B /* StandingsTableViewHeaderCell.xib in Resources */,
+				C0F56361278F032C00922DBB /* EventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +499,9 @@
 				C0DED2F7276F7BFB0007E679 /* EndpointConstants.swift in Sources */,
 				C011FA7B2789CBB700E7733B /* League.swift in Sources */,
 				C0CB98C02787969000712186 /* AppConstants.swift in Sources */,
+				C0937EE2278CE1D400195046 /* EventListViewController.swift in Sources */,
+				C0F56360278F032C00922DBB /* EventTableViewCell.swift in Sources */,
+				C0937EE6278CE2BA00195046 /* EventListViewModel.swift in Sources */,
 				C0ADD04F276CC7F10016AFE4 /* TeamTableViewCell.swift in Sources */,
 				C0ADD033276CBAD90016AFE4 /* SceneDelegate.swift in Sources */,
 				C0ADD049276CBC460016AFE4 /* TeamListViewController.swift in Sources */,
@@ -469,8 +511,10 @@
 				C011FA772789CB2C00E7733B /* Venue.swift in Sources */,
 				C011FA752789CAF200E7733B /* Team.swift in Sources */,
 				C0E22D6027810D0100656D3C /* MatchCellViewModel.swift in Sources */,
+				C0937EE0278CE15100195046 /* EventListCoordinator.swift in Sources */,
 				C0E22D52277F23EA00656D3C /* MatchListViewController.swift in Sources */,
 				C034595A27863A27005D5226 /* StandingListViewModel.swift in Sources */,
+				C0F56364278F331300922DBB /* EventCellViewModel.swift in Sources */,
 				C0C2926D2781E42200456BFE /* UIFont+Ext.swift in Sources */,
 				C0E22D5C2780600600656D3C /* MatchTableViewCell.swift in Sources */,
 				C0DED2F9276F87F90007E679 /* EndpointEnum.swift in Sources */,

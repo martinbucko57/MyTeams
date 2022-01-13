@@ -37,8 +37,8 @@ class MatchTableViewCell : UITableViewCell {
         guard let viewModel = viewModel else { return }
 
         dateLabel.text = viewModel.dateString
-        logoHomeImageView.load(url: viewModel.logoHomeURL, placeholder: UIImage(systemName: "xmark.shield"))
-        logoAwayImageView.load(url: viewModel.logoAwayURL, placeholder: UIImage(systemName: "xmark.shield"))
+        logoHomeImageView.load(url: viewModel.logoHomeURL, placeholder: AppConstants.Images.shieldImage)
+        logoAwayImageView.load(url: viewModel.logoAwayURL, placeholder: AppConstants.Images.shieldImage)
         nameHomeLabel.text = viewModel.nameHome
         nameAwayLabel.text = viewModel.nameAway
         scoreHomeLabel.text = viewModel.scoreHome

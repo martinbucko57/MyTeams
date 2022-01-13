@@ -13,7 +13,7 @@ struct Event: Codable {
     var player1: Player
     var player2: Player
     var type: EventType
-    var detail: String
+    var detail: EventTypeDetail
     var comments: String?
     
     enum CodingKeys: String, CodingKey {
@@ -43,5 +43,28 @@ enum EventType: String, Codable {
         let container = try decoder.singleValueContainer()
         let string = try container.decode(String.self)
         self = EventType(rawValue: string) ?? .unknown
+    }
+}
+
+enum EventTypeDetail: String, Codable {
+    case normalGoal = "Normal Goal"
+    case ownGoal = "Own Goal"
+    case penalty = "Penalty"
+    case missedPenalty = "Missed Penalty"
+    case yellowCard = "Yellow Card"
+    case secondYellowCard = "Second Yellow card"
+    case redCard = "Red card"
+    case cancelledGoal = "Goal cancelled"
+    case confirmedPenalty = "Penalty confirmed"
+    case unknown = "unknown"
+    
+    enum CodingKeys: String, CodingKey {
+        case normalGoal, ownGoal, penalty, missedPenalty, yellowCard, secondYellowCard, redCard, cancelledGoal, confirmedPenalty, unknown
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let string = try container.decode(String.self)
+        self = EventTypeDetail(rawValue: string) ?? .unknown
     }
 }

@@ -19,12 +19,13 @@ class TeamDetailCoordinator: TeamDetailCoordinatorType {
     private var rootViewController: UINavigationController
     private weak var currentController: TeamDetailViewController?
     private weak var currentChildController: UIViewController?
-    private var childControllers: Set<UIViewController> = []
+    private var childControllers: Set<UIViewController>
     private let team: Team
 
     init(rootViewController: UINavigationController, team: Team) {
         self.rootViewController = rootViewController
         self.team = team
+        self.childControllers = []
     }
     
     func start() {

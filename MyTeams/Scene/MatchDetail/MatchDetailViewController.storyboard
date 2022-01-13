@@ -139,22 +139,35 @@
                                     <segment title="Lineups"/>
                                     <segment title="Statistics"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="5cz-1W-zWj"/>
+                                </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XpR-Wl-dGT" userLabel="Container View">
+                                <rect key="frame" x="10" y="297" width="394" height="565"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XpR-Wl-dGT" secondAttribute="trailing" constant="10" id="1Jf-sj-2z8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="XpR-Wl-dGT" secondAttribute="bottom" id="JdP-OJ-A0s"/>
                             <constraint firstItem="dwa-9n-tRe" firstAttribute="top" secondItem="PGi-VV-nhW" secondAttribute="bottom" constant="10" id="NA1-LL-ZBd"/>
                             <constraint firstItem="dwa-9n-tRe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="Uf4-3q-wfO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dwa-9n-tRe" secondAttribute="trailing" constant="10" id="VKs-TN-rLQ"/>
                             <constraint firstItem="PGi-VV-nhW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="XsG-Mt-O84"/>
+                            <constraint firstItem="XpR-Wl-dGT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="cl4-IF-F6K"/>
+                            <constraint firstItem="XpR-Wl-dGT" firstAttribute="top" secondItem="dwa-9n-tRe" secondAttribute="bottom" constant="5" id="ei4-4l-TWc"/>
                             <constraint firstItem="PGi-VV-nhW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="fNu-Vw-sP1"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PGi-VV-nhW" secondAttribute="trailing" constant="10" id="vo2-gs-wrg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="XpR-Wl-dGT" id="nCy-5j-mbU"/>
                         <outlet property="dateLabel" destination="yXX-ck-ZJa" id="zxg-uK-BMX"/>
                         <outlet property="scoreLabel" destination="1WI-3Q-5Qo" id="Hsf-I3-nyv"/>
+                        <outlet property="segmentedControl" destination="dwa-9n-tRe" id="kRO-do-KIc"/>
                         <outlet property="statusLabel" destination="EgR-DL-hMR" id="g3C-nW-rxF"/>
                         <outlet property="teamAwayLogo" destination="CEy-wt-rJM" id="Uiw-0A-SMx"/>
                         <outlet property="teamAwayNameLabel" destination="WDG-T5-ma7" id="imy-Ob-G80"/>

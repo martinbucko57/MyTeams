@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="76" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="MyTeams" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4x0-4e-f8Z">
+                        <rect key="frame" x="0.0" y="5" width="320" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1C-xF-Kz6" userLabel="Time Home">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="egr-tS-Yor" userLabel="Image Type Home">
+                                <rect key="frame" x="42" y="0.0" width="40" height="30"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="rx8-YS-WNt" userLabel="Players">
+                                <rect key="frame" x="84" y="0.0" width="152" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S9Z-tb-mc3" userLabel="Image Type Away">
+                                <rect key="frame" x="238" y="0.0" width="40" height="30"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="6gk-eF-1hd" userLabel="Time Away">
+                                <rect key="frame" x="280" y="0.0" width="40" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LA7-vO-aqB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6gk-eF-1hd" firstAttribute="top" secondItem="4x0-4e-f8Z" secondAttribute="top" id="4MI-lL-jo4"/>
+                            <constraint firstItem="egr-tS-Yor" firstAttribute="width" secondItem="o1C-xF-Kz6" secondAttribute="width" id="4ge-f5-WHV"/>
+                            <constraint firstAttribute="trailing" secondItem="6gk-eF-1hd" secondAttribute="trailing" id="Cub-Iz-riY"/>
+                            <constraint firstItem="S9Z-tb-mc3" firstAttribute="width" secondItem="6gk-eF-1hd" secondAttribute="width" id="GQT-O6-VSQ"/>
+                            <constraint firstItem="o1C-xF-Kz6" firstAttribute="width" secondItem="6gk-eF-1hd" secondAttribute="width" id="kja-y3-MBA"/>
+                            <constraint firstAttribute="bottom" secondItem="6gk-eF-1hd" secondAttribute="bottom" id="wqs-qt-htx"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4x0-4e-f8Z" secondAttribute="bottom" constant="5" id="5k7-R1-UkV"/>
+                    <constraint firstAttribute="trailing" secondItem="4x0-4e-f8Z" secondAttribute="trailing" id="6fv-5h-0FT"/>
+                    <constraint firstItem="4x0-4e-f8Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AEj-aS-2qb"/>
+                    <constraint firstItem="4x0-4e-f8Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="S18-mf-bed"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="playersLabel" destination="rx8-YS-WNt" id="S6M-u4-pbQ"/>
+                <outlet property="timeAwayLabel" destination="6gk-eF-1hd" id="dQj-H4-IXk"/>
+                <outlet property="timeHomeLabel" destination="o1C-xF-Kz6" id="n6R-Nn-JAg"/>
+                <outlet property="typeAwayImageView" destination="S9Z-tb-mc3" id="Q2u-G9-XXt"/>
+                <outlet property="typeHomeImageView" destination="egr-tS-Yor" id="H8y-QF-9DB"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

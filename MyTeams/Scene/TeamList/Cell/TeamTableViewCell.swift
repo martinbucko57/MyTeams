@@ -19,7 +19,7 @@ class TeamTableViewCell : UITableViewCell {
     
     func configure(viewModel: TeamCellViewModel, scene: TeamCellScene) {
         nameLabel.text = viewModel.teamName
-        logoImageView.load(url: viewModel.teamLogo, placeholder: UIImage(systemName: "xmark.shield"))
+        logoImageView.load(url: viewModel.teamLogo, placeholder: AppConstants.Images.shieldImage)
         favouriteImageView.isHidden = scene == .teamList ? true : !viewModel.isFavourite
     }
     

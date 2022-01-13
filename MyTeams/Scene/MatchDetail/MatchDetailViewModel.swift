@@ -9,7 +9,7 @@ import Foundation
 
 protocol MatchDetailViewModelInputs {
     func viewDidLoad()
-//    func segmentValueChanged(selectedIndex: Int)
+    func segmentValueChanged(selectedIndex: Int)
 }
 
 protocol MatchDetailViewModelOutputs {
@@ -41,7 +41,6 @@ class MatchDetailViewModel: MatchDetailViewModelType, MatchDetailViewModelOutput
     var didFinishFetching: (() -> Void)?
     var isFetching: ((Bool) -> Void)?
     
-    
     private let fixtureId: Int
     private var match: ResponseFixture?
 
@@ -70,11 +69,32 @@ extension MatchDetailViewModel {
     func viewDidLoad() {
         initFetch()
     }
+    
+    func segmentValueChanged(selectedIndex: Int) {
+        switch selectedIndex {
+        case 0:
+            let events = match?.events?.map { (event: Event) -> Event in
+                var newEvent = event
+                if event.team.id == match?.teams.home.id {
+                    newEvent.team.status = .home
+                } else {
+                    newEvent.team.status = .away
+                }
+                return newEvent
+            }
+            coordinator?.showEvents(eventList: events ?? [])
+        default:
+            break
+        }
+    }
 
     private func initFetch() {
         fetchMatch(for: fixtureId) { [weak self] match in
             self?.match = match
             self?.didFinishFetching?()
+            DispatchQueue.main.async {
+                self?.segmentValueChanged(selectedIndex: 0)
+            }
         }
     }
     

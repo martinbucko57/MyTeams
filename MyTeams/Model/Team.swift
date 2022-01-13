@@ -16,4 +16,9 @@ struct Team: Codable, Hashable {
     var logo: URL?
     var winner: Bool?
     var isFavourite: Bool?
+    var status: TeamStatus?
+}
+
+enum TeamStatus: Codable {
+    case home, away
 }
