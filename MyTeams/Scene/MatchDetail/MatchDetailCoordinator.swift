@@ -10,6 +10,7 @@ import UIKit
 protocol MatchDetailCoordinatorType {
     func start()
     func showEvents(eventList: [Event])
+    func showLineUps(homeLineUp: LineUp, awayLineUp: LineUp)
 }
 
 class MatchDetailCoordinator: MatchDetailCoordinatorType {
@@ -41,6 +42,14 @@ class MatchDetailCoordinator: MatchDetailCoordinatorType {
             removeChildViewController(viewController: currentChildController)
         }
         let newChildController = childControllers.first(where: { $0 is EventListViewController }) ?? EventListCoordinator(parentCoordinator: self, eventList: eventList).start()
+        addChildViewController(viewController: newChildController)
+    }
+    
+    func showLineUps(homeLineUp: LineUp, awayLineUp: LineUp) {
+        if let currentChildController = currentChildController {
+            removeChildViewController(viewController: currentChildController)
+        }
+        let newChildController = childControllers.first(where: { $0 is LineUpListViewController }) ?? LineUpListCoordinator(parentCoordinator: self, homeLineUp: homeLineUp, awayLineUp: awayLineUp).start()
         addChildViewController(viewController: newChildController)
     }
     

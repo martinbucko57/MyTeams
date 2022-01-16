@@ -83,6 +83,14 @@ extension MatchDetailViewModel {
                 return newEvent
             }
             coordinator?.showEvents(eventList: events ?? [])
+        case 1:
+            guard match?.lineups?.count == 2 else { return }
+            let (homeLineUp, awayLineUp) = match?.lineups?.first?.team.id == match?.teams.home.id
+                ? (match?.lineups?.first, match?.lineups?.last)
+                : (match?.lineups?.last, match?.lineups?.first)
+            
+            guard let homeLineUp = homeLineUp, let awayLineUp = awayLineUp else { return }
+            coordinator?.showLineUps(homeLineUp: homeLineUp, awayLineUp: awayLineUp)
         default:
             break
         }

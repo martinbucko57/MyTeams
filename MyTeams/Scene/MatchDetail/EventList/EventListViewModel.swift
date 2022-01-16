@@ -25,9 +25,6 @@ class EventListViewModel: EventListViewModelType, EventListViewModelOutputs, Eve
 
     var coordinator: EventListCoordinatorType?
     
-    var didFinishFetching: ((Int?) -> Void)?
-    var isFetching: ((Bool) -> Void)?
-    
     var eventViewModels: [EventCellViewModel]
 
     private let eventList: [Event]

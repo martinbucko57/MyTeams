@@ -29,6 +29,13 @@
 		C011FA92278A3A9C00E7733B /* MatchDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C011FA91278A3A9C00E7733B /* MatchDetailViewController.storyboard */; };
 		C011FA94278A3AC200E7733B /* MatchDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA93278A3AC200E7733B /* MatchDetailCoordinator.swift */; };
 		C011FA96278A408500E7733B /* MatchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011FA95278A408500E7733B /* MatchDetailViewModel.swift */; };
+		C01B985A279216F400EEDCB6 /* LineUpListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01B9859279216F400EEDCB6 /* LineUpListCoordinator.swift */; };
+		C01B985C27921FCD00EEDCB6 /* LineUpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01B985B27921FCD00EEDCB6 /* LineUpListViewController.swift */; };
+		C01B985E2792229500EEDCB6 /* LineUpListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01B985D2792229500EEDCB6 /* LineUpListViewController.storyboard */; };
+		C01B98602792232600EEDCB6 /* LineUpListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01B985F2792232600EEDCB6 /* LineUpListViewModel.swift */; };
+		C01B9864279229F800EEDCB6 /* LineUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01B9862279229F800EEDCB6 /* LineUpTableViewCell.swift */; };
+		C01B9865279229F800EEDCB6 /* LineUpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01B9863279229F800EEDCB6 /* LineUpTableViewCell.xib */; };
+		C01B986727922C6100EEDCB6 /* LineUpCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01B986627922C6100EEDCB6 /* LineUpCellViewModel.swift */; };
 		C01EFE0127836F6E0001FD88 /* Sequence+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EFE0027836F6E0001FD88 /* Sequence+Ext.swift */; };
 		C023AEE82788798800D3617B /* StandingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C023AEE72788798800D3617B /* StandingsTableViewCell.swift */; };
 		C02AA5952775DACF00C3E6D3 /* SearchTeamCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AA5942775DACF00C3E6D3 /* SearchTeamCoordinator.swift */; };
@@ -60,6 +67,9 @@
 		C0ADD053276CD7900016AFE4 /* TeamCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADD052276CD7900016AFE4 /* TeamCellViewModel.swift */; };
 		C0B595BA277B737A00951512 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B595B9277B737A00951512 /* UIImageView+Ext.swift */; };
 		C0C2926D2781E42200456BFE /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C2926C2781E42200456BFE /* UIFont+Ext.swift */; };
+		C0C320332793780A00CF1BC8 /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C320322793780A00CF1BC8 /* Collection+Ext.swift */; };
+		C0C320362793890B00CF1BC8 /* LineUpTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C320342793890B00CF1BC8 /* LineUpTableViewHeaderCell.swift */; };
+		C0C320372793890B00CF1BC8 /* LineUpTableViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C320352793890B00CF1BC8 /* LineUpTableViewHeaderCell.xib */; };
 		C0CB98C02787969000712186 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB98BF2787969000712186 /* AppConstants.swift */; };
 		C0CC18AE277BD33D0092C051 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC18AD277BD33D0092C051 /* UserDefaults+Ext.swift */; };
 		C0DED2F5276F711E0007E679 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DED2F4276F711E0007E679 /* NetworkManager.swift */; };
@@ -102,6 +112,13 @@
 		C011FA91278A3A9C00E7733B /* MatchDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchDetailViewController.storyboard; sourceTree = "<group>"; };
 		C011FA93278A3AC200E7733B /* MatchDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailCoordinator.swift; sourceTree = "<group>"; };
 		C011FA95278A408500E7733B /* MatchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewModel.swift; sourceTree = "<group>"; };
+		C01B9859279216F400EEDCB6 /* LineUpListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpListCoordinator.swift; sourceTree = "<group>"; };
+		C01B985B27921FCD00EEDCB6 /* LineUpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpListViewController.swift; sourceTree = "<group>"; };
+		C01B985D2792229500EEDCB6 /* LineUpListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LineUpListViewController.storyboard; sourceTree = "<group>"; };
+		C01B985F2792232600EEDCB6 /* LineUpListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpListViewModel.swift; sourceTree = "<group>"; };
+		C01B9862279229F800EEDCB6 /* LineUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpTableViewCell.swift; sourceTree = "<group>"; };
+		C01B9863279229F800EEDCB6 /* LineUpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineUpTableViewCell.xib; sourceTree = "<group>"; };
+		C01B986627922C6100EEDCB6 /* LineUpCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCellViewModel.swift; sourceTree = "<group>"; };
 		C01EFE0027836F6E0001FD88 /* Sequence+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Ext.swift"; sourceTree = "<group>"; };
 		C023AEE72788798800D3617B /* StandingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewCell.swift; sourceTree = "<group>"; };
 		C02AA5942775DACF00C3E6D3 /* SearchTeamCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamCoordinator.swift; sourceTree = "<group>"; };
@@ -135,6 +152,9 @@
 		C0ADD052276CD7900016AFE4 /* TeamCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCellViewModel.swift; sourceTree = "<group>"; };
 		C0B595B9277B737A00951512 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		C0C2926C2781E42200456BFE /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		C0C320322793780A00CF1BC8 /* Collection+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Ext.swift"; sourceTree = "<group>"; };
+		C0C320342793890B00CF1BC8 /* LineUpTableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpTableViewHeaderCell.swift; sourceTree = "<group>"; };
+		C0C320352793890B00CF1BC8 /* LineUpTableViewHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineUpTableViewHeaderCell.xib; sourceTree = "<group>"; };
 		C0CB98BF2787969000712186 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		C0CC18AD277BD33D0092C051 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 		C0DED2F4276F711E0007E679 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -186,6 +206,7 @@
 		C011FA88278A39FB00E7733B /* MatchDetail */ = {
 			isa = PBXGroup;
 			children = (
+				C01B9858279215C200EEDCB6 /* LineUp */,
 				C0937EDE278CE12E00195046 /* EventList */,
 				C011FA8D278A3A4A00E7733B /* MatchDetailViewController.swift */,
 				C011FA91278A3A9C00E7733B /* MatchDetailViewController.storyboard */,
@@ -193,6 +214,30 @@
 				C011FA95278A408500E7733B /* MatchDetailViewModel.swift */,
 			);
 			path = MatchDetail;
+			sourceTree = "<group>";
+		};
+		C01B9858279215C200EEDCB6 /* LineUp */ = {
+			isa = PBXGroup;
+			children = (
+				C01B98612792297300EEDCB6 /* Cell */,
+				C01B9859279216F400EEDCB6 /* LineUpListCoordinator.swift */,
+				C01B985B27921FCD00EEDCB6 /* LineUpListViewController.swift */,
+				C01B985D2792229500EEDCB6 /* LineUpListViewController.storyboard */,
+				C01B985F2792232600EEDCB6 /* LineUpListViewModel.swift */,
+			);
+			path = LineUp;
+			sourceTree = "<group>";
+		};
+		C01B98612792297300EEDCB6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C01B9862279229F800EEDCB6 /* LineUpTableViewCell.swift */,
+				C01B9863279229F800EEDCB6 /* LineUpTableViewCell.xib */,
+				C01B986627922C6100EEDCB6 /* LineUpCellViewModel.swift */,
+				C0C320342793890B00CF1BC8 /* LineUpTableViewHeaderCell.swift */,
+				C0C320352793890B00CF1BC8 /* LineUpTableViewHeaderCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C02AA5932775DA9B00C3E6D3 /* SearchTeam */ = {
@@ -373,6 +418,7 @@
 				C0CC18AD277BD33D0092C051 /* UserDefaults+Ext.swift */,
 				C0C2926C2781E42200456BFE /* UIFont+Ext.swift */,
 				C01EFE0027836F6E0001FD88 /* Sequence+Ext.swift */,
+				C0C320322793780A00CF1BC8 /* Collection+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -452,11 +498,14 @@
 				C0ADD03A276CBADA0016AFE4 /* Assets.xcassets in Resources */,
 				C0ADD04A276CBC460016AFE4 /* TeamListViewController.storyboard in Resources */,
 				C011FA702789A11900E7733B /* TeamTableViewCell.xib in Resources */,
+				C0C320372793890B00CF1BC8 /* LineUpTableViewHeaderCell.xib in Resources */,
 				C011FA722789A40C00E7733B /* MatchTableViewCell.xib in Resources */,
 				C0E22D56277F242A00656D3C /* MatchListViewController.storyboard in Resources */,
 				C0A55F78277CDE3500DC3D49 /* TeamDetailViewController.storyboard in Resources */,
 				C0E22D5A277F24B800656D3C /* StandingListViewController.storyboard in Resources */,
 				C011FA6C278997FF00E7733B /* StandingsTableViewHeaderCell.xib in Resources */,
+				C01B985E2792229500EEDCB6 /* LineUpListViewController.storyboard in Resources */,
+				C01B9865279229F800EEDCB6 /* LineUpTableViewCell.xib in Resources */,
 				C0F56361278F032C00922DBB /* EventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,8 +524,10 @@
 				C00756C627709C3A00899628 /* NetworkError.swift in Sources */,
 				C011FA812789F0BC00E7733B /* Player.swift in Sources */,
 				C0E22D58277F24A000656D3C /* StandingListViewController.swift in Sources */,
+				C01B985C27921FCD00EEDCB6 /* LineUpListViewController.swift in Sources */,
 				C011FA832789F11500E7733B /* LineUp.swift in Sources */,
 				C0A55F76277CDD0F00DC3D49 /* TeamDetailViewModel.swift in Sources */,
+				C01B985A279216F400EEDCB6 /* LineUpListCoordinator.swift in Sources */,
 				C011FA872789F2EE00E7733B /* TestingData.swift in Sources */,
 				C0ADD04D276CBDE90016AFE4 /* Storyboardable.swift in Sources */,
 				C0DED2F5276F711E0007E679 /* NetworkManager.swift in Sources */,
@@ -485,8 +536,10 @@
 				C0E22D5E278107F100656D3C /* MatchListViewModel.swift in Sources */,
 				C011FA792789CBA400E7733B /* Fixture.swift in Sources */,
 				C034595627861B90005D5226 /* MatchListCoordinator.swift in Sources */,
+				C0C320362793890B00CF1BC8 /* LineUpTableViewHeaderCell.swift in Sources */,
 				C00756C82770E46100899628 /* GeneralResponse.swift in Sources */,
 				C011FA852789F26E00E7733B /* Season.swift in Sources */,
+				C01B986727922C6100EEDCB6 /* LineUpCellViewModel.swift in Sources */,
 				C00756C42770861200899628 /* Endpoint.swift in Sources */,
 				C0A55F74277CD84F00DC3D49 /* TeamDetailCoordinator.swift in Sources */,
 				C0A55F7A277CDF7500DC3D49 /* TeamDetailViewController.swift in Sources */,
@@ -494,11 +547,14 @@
 				C0ADD031276CBAD90016AFE4 /* AppDelegate.swift in Sources */,
 				C011FA7F2789CC6B00E7733B /* Event.swift in Sources */,
 				C02AA5952775DACF00C3E6D3 /* SearchTeamCoordinator.swift in Sources */,
+				C01B9864279229F800EEDCB6 /* LineUpTableViewCell.swift in Sources */,
 				C011FA94278A3AC200E7733B /* MatchDetailCoordinator.swift in Sources */,
 				C09AB4CB27887D8E0016D42A /* StandingsCellViewModel.swift in Sources */,
 				C0DED2F7276F7BFB0007E679 /* EndpointConstants.swift in Sources */,
+				C0C320332793780A00CF1BC8 /* Collection+Ext.swift in Sources */,
 				C011FA7B2789CBB700E7733B /* League.swift in Sources */,
 				C0CB98C02787969000712186 /* AppConstants.swift in Sources */,
+				C01B98602792232600EEDCB6 /* LineUpListViewModel.swift in Sources */,
 				C0937EE2278CE1D400195046 /* EventListViewController.swift in Sources */,
 				C0F56360278F032C00922DBB /* EventTableViewCell.swift in Sources */,
 				C0937EE6278CE2BA00195046 /* EventListViewModel.swift in Sources */,
