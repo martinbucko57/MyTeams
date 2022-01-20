@@ -43,6 +43,7 @@ extension LineUpListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return LineUpTableViewCell.height
     }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return LineUpTableViewHeaderCell.height
     }

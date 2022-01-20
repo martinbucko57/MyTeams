@@ -37,6 +37,10 @@
 		C01B9865279229F800EEDCB6 /* LineUpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01B9863279229F800EEDCB6 /* LineUpTableViewCell.xib */; };
 		C01B986727922C6100EEDCB6 /* LineUpCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01B986627922C6100EEDCB6 /* LineUpCellViewModel.swift */; };
 		C01EFE0127836F6E0001FD88 /* Sequence+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EFE0027836F6E0001FD88 /* Sequence+Ext.swift */; };
+		C022C3B527960A7100272345 /* StatisticsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022C3B427960A7100272345 /* StatisticsCoordinator.swift */; };
+		C022C3B727960B6200272345 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022C3B627960B6200272345 /* StatisticsViewController.swift */; };
+		C022C3B927960CA600272345 /* StatisticsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C022C3B827960CA600272345 /* StatisticsViewController.storyboard */; };
+		C022C3BB27960CF900272345 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022C3BA27960CF900272345 /* StatisticsViewModel.swift */; };
 		C023AEE82788798800D3617B /* StandingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C023AEE72788798800D3617B /* StandingsTableViewCell.swift */; };
 		C02AA5952775DACF00C3E6D3 /* SearchTeamCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AA5942775DACF00C3E6D3 /* SearchTeamCoordinator.swift */; };
 		C02AA5972776293700C3E6D3 /* SearchTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AA5962776293700C3E6D3 /* SearchTeamViewModel.swift */; };
@@ -46,6 +50,9 @@
 		C034595627861B90005D5226 /* MatchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034595527861B90005D5226 /* MatchListCoordinator.swift */; };
 		C03459582786382E005D5226 /* StandingListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03459572786382E005D5226 /* StandingListCoordinator.swift */; };
 		C034595A27863A27005D5226 /* StandingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034595927863A27005D5226 /* StandingListViewModel.swift */; };
+		C057EB3B27976E410005E482 /* StatisticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C057EB3927976E410005E482 /* StatisticsTableViewCell.swift */; };
+		C057EB3C27976E410005E482 /* StatisticsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C057EB3A27976E410005E482 /* StatisticsTableViewCell.xib */; };
+		C057EB3E279770540005E482 /* StatisticsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C057EB3D279770540005E482 /* StatisticsCellViewModel.swift */; };
 		C0937EE0278CE15100195046 /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0937EDF278CE15100195046 /* EventListCoordinator.swift */; };
 		C0937EE2278CE1D400195046 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0937EE1278CE1D400195046 /* EventListViewController.swift */; };
 		C0937EE4278CE27E00195046 /* EventListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0937EE3278CE27E00195046 /* EventListViewController.storyboard */; };
@@ -120,6 +127,10 @@
 		C01B9863279229F800EEDCB6 /* LineUpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineUpTableViewCell.xib; sourceTree = "<group>"; };
 		C01B986627922C6100EEDCB6 /* LineUpCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpCellViewModel.swift; sourceTree = "<group>"; };
 		C01EFE0027836F6E0001FD88 /* Sequence+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Ext.swift"; sourceTree = "<group>"; };
+		C022C3B427960A7100272345 /* StatisticsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCoordinator.swift; sourceTree = "<group>"; };
+		C022C3B627960B6200272345 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		C022C3B827960CA600272345 /* StatisticsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StatisticsViewController.storyboard; sourceTree = "<group>"; };
+		C022C3BA27960CF900272345 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
 		C023AEE72788798800D3617B /* StandingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewCell.swift; sourceTree = "<group>"; };
 		C02AA5942775DACF00C3E6D3 /* SearchTeamCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamCoordinator.swift; sourceTree = "<group>"; };
 		C02AA5962776293700C3E6D3 /* SearchTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamViewModel.swift; sourceTree = "<group>"; };
@@ -129,6 +140,9 @@
 		C034595527861B90005D5226 /* MatchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListCoordinator.swift; sourceTree = "<group>"; };
 		C03459572786382E005D5226 /* StandingListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingListCoordinator.swift; sourceTree = "<group>"; };
 		C034595927863A27005D5226 /* StandingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingListViewModel.swift; sourceTree = "<group>"; };
+		C057EB3927976E410005E482 /* StatisticsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTableViewCell.swift; sourceTree = "<group>"; };
+		C057EB3A27976E410005E482 /* StatisticsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsTableViewCell.xib; sourceTree = "<group>"; };
+		C057EB3D279770540005E482 /* StatisticsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCellViewModel.swift; sourceTree = "<group>"; };
 		C0937EDF278CE15100195046 /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
 		C0937EE1278CE1D400195046 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		C0937EE3278CE27E00195046 /* EventListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventListViewController.storyboard; sourceTree = "<group>"; };
@@ -206,6 +220,7 @@
 		C011FA88278A39FB00E7733B /* MatchDetail */ = {
 			isa = PBXGroup;
 			children = (
+				C022C3B3279609A400272345 /* Statistics */,
 				C01B9858279215C200EEDCB6 /* LineUp */,
 				C0937EDE278CE12E00195046 /* EventList */,
 				C011FA8D278A3A4A00E7733B /* MatchDetailViewController.swift */,
@@ -240,6 +255,18 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		C022C3B3279609A400272345 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				C057EB3827976E1D0005E482 /* Cell */,
+				C022C3B427960A7100272345 /* StatisticsCoordinator.swift */,
+				C022C3B627960B6200272345 /* StatisticsViewController.swift */,
+				C022C3B827960CA600272345 /* StatisticsViewController.storyboard */,
+				C022C3BA27960CF900272345 /* StatisticsViewModel.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
 		C02AA5932775DA9B00C3E6D3 /* SearchTeam */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +276,16 @@
 				C02AA59A277878D400C3E6D3 /* SearchTeamViewController.storyboard */,
 			);
 			path = SearchTeam;
+			sourceTree = "<group>";
+		};
+		C057EB3827976E1D0005E482 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C057EB3927976E410005E482 /* StatisticsTableViewCell.swift */,
+				C057EB3A27976E410005E482 /* StatisticsTableViewCell.xib */,
+				C057EB3D279770540005E482 /* StatisticsCellViewModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C0937EDE278CE12E00195046 /* EventList */ = {
@@ -497,6 +534,7 @@
 				C011FA6E27899EE300E7733B /* StandingsTableViewCell.xib in Resources */,
 				C0ADD03A276CBADA0016AFE4 /* Assets.xcassets in Resources */,
 				C0ADD04A276CBC460016AFE4 /* TeamListViewController.storyboard in Resources */,
+				C057EB3C27976E410005E482 /* StatisticsTableViewCell.xib in Resources */,
 				C011FA702789A11900E7733B /* TeamTableViewCell.xib in Resources */,
 				C0C320372793890B00CF1BC8 /* LineUpTableViewHeaderCell.xib in Resources */,
 				C011FA722789A40C00E7733B /* MatchTableViewCell.xib in Resources */,
@@ -506,6 +544,7 @@
 				C011FA6C278997FF00E7733B /* StandingsTableViewHeaderCell.xib in Resources */,
 				C01B985E2792229500EEDCB6 /* LineUpListViewController.storyboard in Resources */,
 				C01B9865279229F800EEDCB6 /* LineUpTableViewCell.xib in Resources */,
+				C022C3B927960CA600272345 /* StatisticsViewController.storyboard in Resources */,
 				C0F56361278F032C00922DBB /* EventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +560,7 @@
 				C02AA59D2778BD2900C3E6D3 /* APIService.swift in Sources */,
 				C02AA5992778740B00C3E6D3 /* SearchTeamViewController.swift in Sources */,
 				C011FA8F278A3A4A00E7733B /* MatchDetailViewController.swift in Sources */,
+				C022C3B527960A7100272345 /* StatisticsCoordinator.swift in Sources */,
 				C00756C627709C3A00899628 /* NetworkError.swift in Sources */,
 				C011FA812789F0BC00E7733B /* Player.swift in Sources */,
 				C0E22D58277F24A000656D3C /* StandingListViewController.swift in Sources */,
@@ -538,11 +578,13 @@
 				C034595627861B90005D5226 /* MatchListCoordinator.swift in Sources */,
 				C0C320362793890B00CF1BC8 /* LineUpTableViewHeaderCell.swift in Sources */,
 				C00756C82770E46100899628 /* GeneralResponse.swift in Sources */,
+				C057EB3B27976E410005E482 /* StatisticsTableViewCell.swift in Sources */,
 				C011FA852789F26E00E7733B /* Season.swift in Sources */,
 				C01B986727922C6100EEDCB6 /* LineUpCellViewModel.swift in Sources */,
 				C00756C42770861200899628 /* Endpoint.swift in Sources */,
 				C0A55F74277CD84F00DC3D49 /* TeamDetailCoordinator.swift in Sources */,
 				C0A55F7A277CDF7500DC3D49 /* TeamDetailViewController.swift in Sources */,
+				C022C3B727960B6200272345 /* StatisticsViewController.swift in Sources */,
 				C0E9E5E2278483F8008EDF8D /* BaseViewController.swift in Sources */,
 				C0ADD031276CBAD90016AFE4 /* AppDelegate.swift in Sources */,
 				C011FA7F2789CC6B00E7733B /* Event.swift in Sources */,
@@ -556,6 +598,7 @@
 				C0CB98C02787969000712186 /* AppConstants.swift in Sources */,
 				C01B98602792232600EEDCB6 /* LineUpListViewModel.swift in Sources */,
 				C0937EE2278CE1D400195046 /* EventListViewController.swift in Sources */,
+				C022C3BB27960CF900272345 /* StatisticsViewModel.swift in Sources */,
 				C0F56360278F032C00922DBB /* EventTableViewCell.swift in Sources */,
 				C0937EE6278CE2BA00195046 /* EventListViewModel.swift in Sources */,
 				C0ADD04F276CC7F10016AFE4 /* TeamTableViewCell.swift in Sources */,
@@ -565,6 +608,7 @@
 				C0EAE6D827733928000C441C /* ResponseType.swift in Sources */,
 				C0B595BA277B737A00951512 /* UIImageView+Ext.swift in Sources */,
 				C011FA772789CB2C00E7733B /* Venue.swift in Sources */,
+				C057EB3E279770540005E482 /* StatisticsCellViewModel.swift in Sources */,
 				C011FA752789CAF200E7733B /* Team.swift in Sources */,
 				C0E22D6027810D0100656D3C /* MatchCellViewModel.swift in Sources */,
 				C0937EE0278CE15100195046 /* EventListCoordinator.swift in Sources */,

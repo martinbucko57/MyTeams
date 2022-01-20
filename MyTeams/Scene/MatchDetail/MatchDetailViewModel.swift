@@ -91,6 +91,14 @@ extension MatchDetailViewModel {
             
             guard let homeLineUp = homeLineUp, let awayLineUp = awayLineUp else { return }
             coordinator?.showLineUps(homeLineUp: homeLineUp, awayLineUp: awayLineUp)
+        case 2:
+            guard match?.statistics?.count == 2 else { return }
+            let (homeStatistics, awayStatistics) = match?.statistics?.first?.team.id == match?.teams.home.id
+                ? (match?.statistics?.first, match?.statistics?.last)
+                : (match?.statistics?.last, match?.statistics?.first)
+            
+            guard let homeStatistics = homeStatistics, let awayStatistics = awayStatistics else { return }
+            coordinator?.showStatistics(homeStatistics: homeStatistics, awayStatistics: awayStatistics)
         default:
             break
         }

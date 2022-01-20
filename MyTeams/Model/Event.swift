@@ -53,13 +53,16 @@ enum EventTypeDetail: String, Codable {
     case missedPenalty = "Missed Penalty"
     case yellowCard = "Yellow Card"
     case secondYellowCard = "Second Yellow card"
-    case redCard = "Red card"
+    case redCard = "Red Card"
+    case confirmedGoal = "Goal confirmed"
     case cancelledGoal = "Goal cancelled"
     case confirmedPenalty = "Penalty confirmed"
+    case cancelledPenalty = "Penalty cancelled"
+    case awardedPenalty = "Penalty awarded"
     case unknown = "unknown"
     
     enum CodingKeys: String, CodingKey {
-        case normalGoal, ownGoal, penalty, missedPenalty, yellowCard, secondYellowCard, redCard, cancelledGoal, confirmedPenalty, unknown
+        case normalGoal, ownGoal, penalty, missedPenalty, yellowCard, secondYellowCard, redCard, confirmedGoal, cancelledGoal, confirmedPenalty, cancelledPenalty, awardedPenalty, unknown
     }
     
     init(from decoder: Decoder) throws {

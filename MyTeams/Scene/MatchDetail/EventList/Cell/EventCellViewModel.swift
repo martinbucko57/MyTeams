@@ -64,7 +64,11 @@ extension EventCellViewModel {
             default: break
             }
         case .substitution: textFields.append("(\(event.player2.name ?? ""))")
-        case .card, .VAR: textFields.append("(\(event.detail.rawValue))")
+        case .card:
+            if let comment = event.comments {
+                textFields.append("(\(comment))")
+            }
+        case .VAR: textFields.append("(\(event.detail.rawValue))")
         default: break
         }
         return event.team.status == .home ? textFields.joined(separator: " ") : textFields.reversed().joined(separator: " ")

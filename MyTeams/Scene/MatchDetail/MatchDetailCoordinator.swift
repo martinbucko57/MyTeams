@@ -11,6 +11,7 @@ protocol MatchDetailCoordinatorType {
     func start()
     func showEvents(eventList: [Event])
     func showLineUps(homeLineUp: LineUp, awayLineUp: LineUp)
+    func showStatistics(homeStatistics: FixtureTeamStatistics, awayStatistics: FixtureTeamStatistics)
 }
 
 class MatchDetailCoordinator: MatchDetailCoordinatorType {
@@ -50,6 +51,14 @@ class MatchDetailCoordinator: MatchDetailCoordinatorType {
             removeChildViewController(viewController: currentChildController)
         }
         let newChildController = childControllers.first(where: { $0 is LineUpListViewController }) ?? LineUpListCoordinator(parentCoordinator: self, homeLineUp: homeLineUp, awayLineUp: awayLineUp).start()
+        addChildViewController(viewController: newChildController)
+    }
+    
+    func showStatistics(homeStatistics: FixtureTeamStatistics, awayStatistics: FixtureTeamStatistics) {
+        if let currentChildController = currentChildController {
+            removeChildViewController(viewController: currentChildController)
+        }
+        let newChildController = childControllers.first(where: { $0 is StatisticsViewController }) ?? StatisticsCoordinator(parentCoordinator: self, homeStatistics: homeStatistics, awayStatistics: awayStatistics).start()
         addChildViewController(viewController: newChildController)
     }
     
